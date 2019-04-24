@@ -1,0 +1,8 @@
+version: '2'
+services:
+  node1:
+    environment:
+      - bootstrap.memory_lock=true
+    ports:
+      - "8123:80"
+    privileged: true
