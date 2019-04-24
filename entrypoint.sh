@@ -1,5 +1,6 @@
 #!/bin/bash
-
+service apache2 restart
+#/var/www/atom/bin/console.py schema create
 #chown -R mysql:mysql /var/lib/mysql /var/run/mysqld
 
 #mysqld &
