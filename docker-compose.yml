@@ -9,3 +9,12 @@ services:
     ports:
       - "8123:80"
     privileged: true
+  node2:
+    environment:
+      - bootstrap.memory_lock=true
+    build:
+      context: .
+      dockerfile: atom.Dockerfile
+    ports:
+      - "8124:80"
+    privileged: true
